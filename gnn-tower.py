@@ -66,8 +66,9 @@ def create_graph_data_for_timestamp(df, timestamp):
     G = nx.Graph()  # NetworkX Graph for visualization
 
     # Process vehicle nodes
+    # there could be at most 3 rows and at least 1 row for each vehicle id in each timestamp
+    # we want to make sure we get the latest data for each vehicle
     for vid in vehicle_ids:
-
         try:
             vehicle_data = timestamp_data[timestamp_data['vehicleId'] == vid].iloc[2]
         except IndexError:
@@ -133,8 +134,6 @@ def create_graph_data_for_timestamp(df, timestamp):
     return graph_data, G, vehicle_mapping, tower_mapping
 
 #--------------------------------------------------------------------------------------------------#
-
-
 
 # Two GCNConv layers for processing node features.
 # A forward method to propagate node features through the network.
