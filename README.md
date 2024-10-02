@@ -29,6 +29,7 @@ This thesis presents TH-GCN (THroughput-oriented Graph Convolutional Network), a
   - Real-time measurement and reporting of network metrics
   - Capability to predictively model and mitigate handover effects
   - Advanced network technologies (e.g., 5G) deployed in the urban center
+![Handover Problem Scenario](images/HO-scenario.png)
 
 ## Methodology
 1. **Graph-based Network Modeling:**
@@ -40,32 +41,20 @@ This thesis presents TH-GCN (THroughput-oriented Graph Convolutional Network), a
 3. **Incremental Learning:**
    - Model parameters saved and loaded for continuous adaptation
 
+![Problem Modelling using GNNs](images/problem-modelling.png)
+
 ## TH-GCN Algorithm
 1. **Graph Construction:** Create a graph representation of the network state
 2. **Feature Extraction:** Use GCN to learn spatial features of the network
 3. **Triplet Loss Training:** Optimize the model to distinguish between connected and non-connected towers
 4. **Candidate Selection:** Identify top 3 tower candidates for each vehicle based on learned embeddings
 
-TH-GCN Pipeline
-The TH-GCN pipeline integrates data collection, graph construction, and GNN-based decision making into a cohesive system for handover management. The following figure illustrates the key components and flow of the TH-GCN pipeline:
-Show Image
-Figure 1: TH-GCN Pipeline Overview
-Key components of the pipeline:
-
-Data Collection: Gathering real-time network metrics from vehicles and towers.
-Graph Construction: Creating a graph representation of the network state.
-GNN Model: Applying the trained GNN to extract spatial features and generate embeddings.
-Candidate Selection: Identifying top tower candidates based on learned embeddings.
-SINR-based Decision: Making final handover decisions using SINR comparisons and hysteresis.
-
-This pipeline demonstrates the integration of graph-based machine learning techniques with traditional network metrics for optimized handover management in 5G vehicular networks.
 
 ## SINR-based Handover Decision Making
 1. **Data Collection:** Gather real-time network metrics (signal quality, throughput, distance, etc.)
 2. **Candidate Evaluation:** Use TH-GCN to identify top tower candidates
 3. **SINR Comparison:** Apply hysteresis-based algorithm for final handover decisions
 4. **Handover Execution:** Perform handover or maintain connection based on decision criteria
-hi
 
 
 # TH-GCN: Graph-based Handover Management for 5G Vehicular Networks
@@ -78,7 +67,7 @@ This thesis presents TH-GCN (Tower Handover Graph Convolutional Network), a nove
 
 The TH-GCN pipeline integrates data collection, graph construction, and GNN-based decision making into a cohesive system for handover management. The following figure illustrates the key components and flow of the TH-GCN pipeline:
 
-![TH-GCN Pipeline](figures/pipeline.png)
+![TH-GCN Pipeline](images/pipeline.png)
 
 *Figure 1: TH-GCN Pipeline Overview*
 
