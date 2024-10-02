@@ -65,6 +65,7 @@ This pipeline demonstrates the integration of graph-based machine learning techn
 2. **Candidate Evaluation:** Use TH-GCN to identify top tower candidates
 3. **SINR Comparison:** Apply hysteresis-based algorithm for final handover decisions
 4. **Handover Execution:** Perform handover or maintain connection based on decision criteria
+hi
 
 
 # TH-GCN: Graph-based Handover Management for 5G Vehicular Networks
