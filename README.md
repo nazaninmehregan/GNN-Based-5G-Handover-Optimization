@@ -80,8 +80,6 @@ Key components of the pipeline:
 
 This pipeline demonstrates the integration of graph-based machine learning techniques with traditional network metrics for optimized handover management in 5G vehicular networks.
 
-[Remaining sections (Implementation, Requirements, Usage, Output) remain unchanged]
-
 
 ## Implementation
 The core algorithm is implemented in Python, utilizing PyTorch and PyTorch Geometric for the GNN components.
